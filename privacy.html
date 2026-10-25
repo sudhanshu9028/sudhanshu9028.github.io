@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<meta name="description" content="Privacy policy for Lombaad Publisher.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+
+  <h1>Privacy policy</h1>
+  <p class="sub">Lombaad Publisher · Effective 25 October 2026</p>
+
+  <p>Lombaad Publisher ("the tool") is a personal program run by the owner of the Lombaad
+     channel on their own computer. This page explains what data it uses and what happens to it.</p>
+
+  <h2>Who the tool works for</h2>
+  <p>The tool only acts on the YouTube channel and Instagram account that the owner signs in to.
+     It does not collect data about viewers, other users or anyone else's accounts.</p>
+
+  <h2>Data the tool accesses</h2>
+  <p><strong>From YouTube (YouTube API Services), with the owner's permission:</strong></p>
+  <ul>
+    <li>Basic channel details: channel name and subscriber count.</li>
+    <li>The ability to upload videos, set titles, descriptions and thumbnails, and schedule releases on the owner's channel.</li>
+    <li>Statistics for the owner's own videos: views, watch time, audience retention,
+        subscribers gained, traffic sources, search terms that led to the videos and,
+        if the channel is monetised, revenue figures.</li>
+  </ul>
+  <p>All YouTube statistics are totals per video, as YouTube provides them. They do not identify individual viewers.</p>
+
+  <p><strong>From Instagram (Meta Graph API), with the owner's permission:</strong></p>
+  <ul>
+    <li>The ability to publish Reels to the owner's Instagram account.</li>
+    <li>Statistics for those Reels: views, reach, likes, comments, shares and saves, as totals per post.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>To publish the owner's videos at the scheduled time.</li>
+    <li>To show the owner how each video is performing.</li>
+    <li>To write a weekly report about which topics and titles work best. To write that report,
+        the per-video statistics (no personal information) are sent to Anthropic's Claude API
+        for analysis. Anthropic's handling of that data is covered by the
+        <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a>.</li>
+  </ul>
+  <p>The data is never sold, never used for advertising and never shared with anyone else.</p>
+
+  <h2>Where the data is stored</h2>
+  <p>Everything is stored only on the owner's own computer: the sign-in tokens, a local database of
+     videos and their statistics, and the weekly reports. Nothing is stored on a server run by this tool.</p>
+
+  <h2>How long it is kept, and deleting it</h2>
+  <p>Data is kept until the owner deletes it. The owner can delete everything at any time:</p>
+  <ul>
+    <li><code>python -m hindi_content forget youtube</code> deletes all stored YouTube data,
+        including statistics, reports and the sign-in token.</li>
+    <li><code>python -m hindi_content forget instagram</code> deletes all stored Instagram data.</li>
+  </ul>
+
+  <h2>Revoking access</h2>
+  <ul>
+    <li>YouTube / Google: remove the app at the
+        <a href="https://myaccount.google.com/permissions">Google security settings page</a>.</li>
+    <li>Instagram / Meta: remove the app under Settings → Apps and websites in Instagram, or
+        delete the system-user token in Meta Business Suite.</li>
+  </ul>
+
+  <h2>Google and YouTube</h2>
+  <p>The tool uses YouTube API Services. By using it you agree to the
+     <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of
+     your data is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:timblenge@gmail.com">timblenge@gmail.com</a></p>
+
+  <footer><a href="./">Lombaad Publisher</a></footer>
+</main>
+</body>
+</html>
